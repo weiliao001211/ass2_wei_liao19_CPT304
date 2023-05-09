@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Holidays， Weather and Accommodation Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Public Holidays， Weather and Accommodation Information</h1>
+
+<div>
+    <label for="country-select">Choose a country:</label>
+    <select id="country-select">
+        <option value="none">None</option>
+    </select>
+
+    <br>
+
+    <label for="holiday-select">Choose a holiday:</label>
+    <select id="holiday-select">
+        <option value="none">None</option>
+    </select>
+    <br>
+
+    <label for="region-select">Choose a province/state:</label>
+    <select id="region-select">
+        <option value="none">None</option>
+    </select>
+    <br>
+
+    <label for="city-select">Choose a city:</label>
+    <select id="city-select">
+        <option value="none">None</option>
+    </select>
+</div>
+
+<div>
+    <button id="holiday-button">Get Public Holidays</button>
+    <button id="weather-button">Get Weather Info</button>
+    <button id="rental-button">Get Accommodation Info</button>
+</div>
+
+<div id="publicHolidays" style="display: block">
+    <h3>Public Holidays:</h3>
+    <ul id="holiday-list"></ul>
+</div>
+
+<div id="weather" style="display: none">
+    <h3>Weather Information:</h3>
+    <ul id="weather-list"></ul>
+</div>
+
+
+<div id="accommodation" style="display: none">
+    <h3>Accommodation Rental Information :</h3>
+    <ul id="rental-list"></ul>
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
